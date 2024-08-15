@@ -1,0 +1,17 @@
+ package ${package.EntityName};
+
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableaName;
+import lombok.Data;
+
+@Data
+@TableaName("${table.name}")
+public class ${entity} {
+#foreach($field in $table.fields)
+/**
+ * $field.comment
+ */
+@TableId
+private $field.propertyType $field.propertyName;
+#end
+}

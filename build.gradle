@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'online.nebula-cloud'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.baomidou:mybatis-plus-core:3.5.7'
+    implementation 'com.baomidou:mybatis-plus-generator:3.5.7'
+    implementation 'org.slf4j:slf4j-api:2.0.16'
+    implementation 'com.mysql:mysql-connector-j:9.0.0'
+    implementation 'org.apache.velocity:velocity-engine-core:2.3'
+}
+
+test {
+    useJUnitPlatform()
+}
